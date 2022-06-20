@@ -13,7 +13,7 @@ main {
 }
 header {
   display: flex;
-  background:  hsl(192, 100%, 96%);
+  background:  url(./Assets/bg-hero-desktop.svg);
   padding: 20px;
   align-items: center;
   font-family: 'Poppins', sans-serif;
@@ -51,7 +51,7 @@ header div {
   background: hal(208, 11%, 55%);
   border-radius: 30px;
   box-sizing: content-box;
-  /* background: whitesmoke; */
+  background: whitesmoke;
   
 }
 .container__1 {
@@ -71,6 +71,7 @@ header div {
   border-style: none;
   font-weight: 20px;
   color: #fff;
+  cursor: pointer;
  
 }
 img {
@@ -84,20 +85,22 @@ img {
     position: relative;
     z-index: 1;
     padding: 30px;
-    margin-bottom: 2px;
+    /* margin-bottom: 200px; */
     margin-left: 400px;
     border-radius: 5px;
     justify-content: center;
     text-align: center;
-    
+    position: absolute; 
 }
 footer {
-  background: rgb(23, 23, 65);
+  background: hsl(192, 100%, 9% );
+  /* position: relative; */
 }
 .footer__container {
   display: flex;
-  padding: 50px;
+  padding-top: 10px;
   color: grey;
+  position: relative;
 }
 footer img {
   width: 10px;
@@ -111,7 +114,7 @@ footer img {
 .logo__footer {
   width: 70%;
   height: 70%;
-  color: #fff;
+  background: #fff;
 }
 .section__1,
 .section__2,
@@ -119,14 +122,14 @@ footer img {
   display: flex;
   flex-direction: column;
   width: 25%;
-  align-items: center;
   justify-content: center;
   line-height: 2;
+  box-sizing: border-box;
+  padding-left: 70px;
 }
 .section__4 {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 }
 .section__4 i {
   margin: 10px;
@@ -134,9 +137,10 @@ footer img {
   padding: 8px;
   border-radius: 4rem;
   color: #fff;
+  cursor: pointer;
 }
 .copyright {
-  text-align: center;
+  text-align: end;
   color: grey;
   padding: 30px;
   position: right;
